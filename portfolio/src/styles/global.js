@@ -2,9 +2,10 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --blue: #0000B5;
-    --green: #C1ECA8;
-    --pink: #DCB1EF;
+    --blue: rgba(0, 0, 181);
+    --green: rgba(193, 236, 168);
+    --pink: rgba(220, 177, 239);
+    --light-pink: rgba(220, 177, 239, 0.1);
   }
 
   * {
@@ -21,6 +22,10 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 720px) {
       font-size: 87.5%; // 14px
+    }
+
+    @media (max-width: 600px) {
+      font-size: 81.25%; // 13px
     }
   }
 
