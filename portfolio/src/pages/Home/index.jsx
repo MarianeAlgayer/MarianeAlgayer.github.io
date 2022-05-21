@@ -1,22 +1,58 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
 
-import { Container, Introduction, Projects } from "./styles";
+import { Introduction, Projects } from './styles';
 
-const Home = () => (
-  <Container>
-    <Introduction>
-      <h1>Hi, there! 👋 I'm Mariane,</h1>
-      <h2>
-        a <img src="https://readme-typing-svg.herokuapp.com/?font=Montserrat&size=24&color=0000B5&background=C1ECA8&center=true&vCenter=true&width=240&height=34&lines=software+developer;former+architect;dog+person" alt="About me"/> based in Brazil.
-      </h2>
-      <p>I'm currently a software development student at <a href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe</a> taking the module about Back-End Development. I'm focused on learning technologies related to JavaScript, as ReactJS and NodeJS, but this is just the beginning 🚀.</p>
-    </Introduction>
+function Home() {
+  const el = useRef(null);
+  const typed = useRef(null);
 
-    <Projects>
-      <h3>PROJECTS</h3>
-      <span />
-    </Projects>
-  </Container>
-);
+  useEffect(() => {
+    const options = {
+      strings: [
+        'software developer',
+        'former architect',
+        'dog person',
+      ],
+      startDelay: 300,
+      typeSpeed: 150,
+      backDelay: 150,
+      backSpeed: 100,
+      loop: true,
+    };
+
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      typed.current.destroy();
+    };
+  }, []);
+
+  return (
+    <main>
+      <Introduction>
+        <h1>Hi, there! 👋 I&apos;m Mariane,</h1>
+
+        <h2>
+          a
+          <span ref={ el } />
+          based in Brazil.
+        </h2>
+
+        <p>
+          I&apos;m currently a software development student at
+          {' '}
+          <a href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe</a>
+          {' '}
+          taking the module about Back-End Development. I&apos;m focused on learning technologies related to JavaScript, as ReactJS and NodeJS, but this is just the beginning 🚀.
+        </p>
+      </Introduction>
+
+      <Projects>
+        <h3>PROJECTS</h3>
+      </Projects>
+    </main>
+  );
+}
 
 export default Home;
