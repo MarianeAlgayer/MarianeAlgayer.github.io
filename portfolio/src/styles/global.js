@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --blue: rgba(0, 0, 181);
     --green: rgba(193, 236, 168);
     --pink: rgba(220, 177, 239);
-    --light-pink: rgba(220, 177, 239, 0.1);
+    --light-pink: rgba(220, 177, 239, 0.5);
   }
 
   * {
@@ -39,4 +39,4 @@ export const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
-`
+`;
