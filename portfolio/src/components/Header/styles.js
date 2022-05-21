@@ -2,18 +2,28 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  display: flex;
-  justify-content: flex-end;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
 
-  padding-bottom: 2.5rem;
-  margin: 2.5rem 6.25rem 5rem;
-  border-bottom: 2px solid var(--blue);
+  width: 100vw;
+  height: 10vh;
+  padding: 0 6.25rem;
 
-  @media (max-width: 600px) {
-    display: flex;
-    justify-content: center;
-  
-    margin: 3rem;
+  text-align: right;
+  background-color: rgb(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+
+  &:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+  @media (max-width: 720px) {
+    padding: 0 2rem;
   }
 `;
 
