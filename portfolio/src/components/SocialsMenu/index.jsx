@@ -2,34 +2,27 @@ import React from 'react';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { MdOutlineMail } from 'react-icons/md';
 
-import { Container, StyledLink } from './styles';
+import Anchor from '../Anchor';
+
+import { Container } from './styles';
 
 function SocialsMenu() {
   return (
     <Container>
-      <StyledLink
+      <Anchor
         href="https://github.com/MarianeAlgayer"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FiGithub />
-      </StyledLink>
+        text={ <FiGithub /> }
+      />
 
-      <StyledLink
+      <Anchor
         href="https://www.linkedin.com/in/mariane-albuquerque-algayer"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <FiLinkedin />
-      </StyledLink>
+        text={ <FiLinkedin /> }
+      />
 
-      <StyledLink
+      <Anchor
         href="mailto:marianealgayer@gmail.com"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <MdOutlineMail />
-      </StyledLink>
+        text={ <MdOutlineMail /> }
+      />
     </Container>
   );
 }
