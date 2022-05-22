@@ -4,8 +4,10 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --blue: rgba(0, 0, 181);
     --green: rgba(193, 236, 168);
+    --light-green: rgba(193, 236, 168, 0.2);
     --pink: rgba(220, 177, 239);
-    --light-pink: rgba(220, 177, 239, 0.5);
+    --medium-pink: rgba(220, 177, 239, 0.5);
+    --light-pink: rgba(220, 177, 239, 0.1);
   }
 
   * {
@@ -16,6 +18,8 @@ export const GlobalStyle = createGlobalStyle`
 
   // font-size 16px (Desktop)
   html {
+    scroll-behavior: smooth;
+    
     @media (max-width: 1080px) {
       font-size: 93.75%; // 15px
     }
