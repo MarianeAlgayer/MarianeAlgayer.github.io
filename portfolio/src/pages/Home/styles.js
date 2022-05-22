@@ -9,11 +9,18 @@ export const Introduction = styled.section`
   height: 100vh;
   
   h1 {
+    display: flex;
+    align-items: center;
+
     font-size: 1.75rem;
     font-weight: 600;
     font-style: italic;
 
     padding-bottom: 0.5rem;
+
+    & > * {
+      margin: 0 0.5rem;
+    }
   }
 
   h2 {
@@ -43,16 +50,19 @@ export const Introduction = styled.section`
     width: 80%;
 
     font-size: 1.25rem;
-    line-height: 2.125rem;
+    line-height: 2.25rem;
     font-weight: 400;
-  }
 
-  a {
-    color: var(--blue);
-    text-decoration: none;
-    font-weight: 600;
+    a {
+      color: var(--blue);
+      text-decoration: none;
 
-    &:hover {
+      &:hover {
+        text-decoration: underline var(--green) 4px;
+      }
+    }
+
+    span {
       text-decoration: underline var(--green) 4px;
     }
   }
@@ -71,12 +81,20 @@ export const Introduction = styled.section`
 `;
 
 export const Projects = styled.section`
-  background-color: var(--light-pink);
-  padding: 3.75rem 12.5rem ;
+  background-color: var(--medium-pink);
+  padding: 3.75rem 12.5rem;
 
   h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 3rem;
+  }
+
+  @media (max-width: 1080px) {
+    padding: 3.75rem 5rem;
+  }
+
+  @media (max-width: 720px) {
+    padding: 3.75rem 3rem;
   }
 `;
