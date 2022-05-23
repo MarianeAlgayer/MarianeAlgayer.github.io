@@ -13,15 +13,15 @@ export const Container = styled.section`
   }
 
   p {
-    font-size: 1.25rem;
-    line-height: 2.25rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
     font-weight: 400;
     margin-bottom: 2rem;
   }
 
   h4 {
-    font-size: 1.25rem;
-    line-height: 2.25rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
 
     a {
       color: var(--blue);
