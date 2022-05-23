@@ -43,7 +43,7 @@ function IntroductionSection() {
       <h2>
         a
         <span ref={ el } />
-        based in Brazil.
+        .
       </h2>
 
       <p>
