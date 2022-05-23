@@ -55,10 +55,11 @@ export const Container = styled.section`
 
     a {
       color: var(--blue);
-      text-decoration: none;
+      text-decoration: underline var(--green) 4px;
+      padding: 0.2rem;
 
       &:hover {
-        text-decoration: underline var(--green) 4px;
+         background-color: var(--green);
       }
     }
 
