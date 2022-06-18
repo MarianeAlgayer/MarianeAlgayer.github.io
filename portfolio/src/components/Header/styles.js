@@ -15,15 +15,34 @@ export const Container = styled.header`
   background-color: rgb(255, 255, 255, 0.9);
   backdrop-filter: blur(2px);
 
-  &:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%;
-}
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+    svg {
+      display: none;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+    }
+  }
 
   @media (max-width: 720px) {
     padding: 0 2rem;
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      .menu-text {
+        display: none;
+      }
+
+      svg {
+        display: block;
+      }
+    }
   }
 `;
 
