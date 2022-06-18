@@ -5,7 +5,7 @@ import ProjectCard from '../ProjectCard';
 
 import { Container } from './styles';
 
-function Projects() {
+function ProjectsSection() {
   return (
     <Container>
       <h3>Projects</h3>
@@ -31,4 +31,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsSection;
