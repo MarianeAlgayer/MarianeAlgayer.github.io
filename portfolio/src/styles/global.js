@@ -4,10 +4,9 @@ export const GlobalStyle = createGlobalStyle`
   :root {
     --blue: rgba(0, 0, 181);
     --green: rgba(193, 236, 168);
-    --light-green: rgba(193, 236, 168, 0.2);
     --pink: rgba(220, 177, 239);
-    --medium-pink: rgba(220, 177, 239, 0.5);
-    --light-pink: rgba(220, 177, 239, 0.1);
+    --medium-pink: rgba(237, 216, 247);
+    --light-pink: rgba(252, 247, 253);
   }
 
   * {

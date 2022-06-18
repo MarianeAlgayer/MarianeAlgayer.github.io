@@ -5,7 +5,7 @@ export const Container = styled.main`
   flex-direction: column;
   justify-content: center;
 
-  margin: 15vh 12.5rem 0;
+  margin: 10vh 12.5rem 0;
   
   h1 {
     font-size: 1.75rem;
@@ -41,10 +41,10 @@ export const Container = styled.main`
   }
 
   @media (max-width: 1080px) {
-    margin: 15vh 5rem 0;
+    margin: 10vh 5rem 0;
   }
 
   @media (max-width: 720px) {
-    margin: 15vh 3rem 0;
+    margin: 10vh 3rem 0;
   }
 `;
