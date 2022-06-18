@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { TiStarburst } from 'react-icons/ti';
+import { TECHNOLOGIES } from '../../utils/constants';
 
 import { Container } from './styles';
 
 function TechnologiesSection() {
-  const [technologies] = useState(['Git', 'HTML', 'CSS', 'JS ES6', 'TypeScript', 'ReactJS', 'RTL', 'NodeJS']);
-
   return (
     <Container>
       <p>
@@ -14,7 +13,7 @@ function TechnologiesSection() {
       </p>
 
       <ul>
-        { technologies.map((technologie) => (
+        { TECHNOLOGIES.map((technologie) => (
           <li key={ technologie }>
             <TiStarburst />
             { technologie }
