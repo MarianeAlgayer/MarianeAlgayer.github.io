@@ -1,5 +1,6 @@
-import PortfolioImg from '../images/portfolio.png';
 import StarWarsImg from '../images/star-wars.png';
+import TrybeWalletImg from '../images/trybe-wallet.png';
+import PortfolioImg from '../images/portfolio.png';
 
 export const TECHNOLOGIES = [
   'Git', 'HTML', 'CSS', 'JS ES6', 'TypeScript', 'ReactJS', 'RTL', 'NodeJS',
@@ -17,6 +18,15 @@ export const PROJECTS = [
   },
   {
     id: 2,
+    name: 'Trybe Wallet',
+    description: 'A expense tracker app with currency conversion.',
+    technologies: ['JS ES6', 'ReactJS', 'Redux'],
+    image: TrybeWalletImg,
+    deployUrl: 'https://trybe-wallet-project-marianealgayer.vercel.app/',
+    repositoryUrl: 'https://github.com/MarianeAlgayer/trybe-wallet-project',
+  },
+  {
+    id: 3,
     name: 'This portfolio',
     description: 'My personal website with a list of my projects.',
     technologies: ['JS ES6', 'ReactJS', 'React Router', 'Styled Components'],
