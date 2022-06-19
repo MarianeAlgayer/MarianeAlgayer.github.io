@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.4d4f2f1d.js",
-    "static/media/star-wars.png": "/static/media/star-wars.8139292cef7ed5cf036b.png",
-    "static/media/portfolio.png": "/static/media/portfolio.2661ff9312c7ce9e7b6e.png",
+    "main.js": "/static/js/main.01b5819c.js",
+    "static/media/trybe-wallet.png": "/static/media/trybe-wallet.179cb1110e796adb0ab1.png",
+    "static/media/star-wars.png": "/static/media/star-wars.572247660af708a7675b.png",
+    "static/media/portfolio.png": "/static/media/portfolio.b0461fae92d59e4149de.png",
     "index.html": "/index.html",
-    "main.4d4f2f1d.js.map": "/static/js/main.4d4f2f1d.js.map"
+    "main.01b5819c.js.map": "/static/js/main.01b5819c.js.map"
   },
   "entrypoints": [
-    "static/js/main.4d4f2f1d.js"
+    "static/js/main.01b5819c.js"
   ]
 }
