@@ -33,17 +33,18 @@ function About() {
         </p>
 
         <p>
-          During this journey, I&apos;ve realized how passionate I&apos;m about technology and the way it can make a positive impact on people&apos;s lives.
+          I&apos;ve always been passionate about technology, and my interest in programming grew from some studies of parametric design. I was fascinated by the area and decided to make a career change to Software Development.
         </p>
 
         <p>
-          After some years working as an architect, I&apos;ve now decided to make a carrer change to software development, starting with a one year course at
+          I&apos;m currently a student at
           {' '}
           <Anchor
             href="https://www.betrybe.com/"
             text="Trybe"
           />
-          .
+          {' '}
+          taking the module about Back-end. I&apos;ve already completed the modules about the Fundamentals of Web Development and Front-end, where I was able to apply what I&apos;ve learned in a practical way.
         </p>
       </section>
 
