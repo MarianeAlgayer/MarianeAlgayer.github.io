@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { IoMenu } from 'react-icons/io5';
 
 import { Container, StyledLink } from './styles';
+import Anchor from '../Anchor';
 
 function Header({ setMenuIsVisible }) {
   return (
@@ -11,8 +12,13 @@ function Header({ setMenuIsVisible }) {
       <nav>
         <div className="menu-text">
           <StyledLink to="/">HOME</StyledLink>
+
           <StyledLink to="/about">ABOUT</StyledLink>
-          <StyledLink to="/mariane-algayer-resume.pdf" target="_blank">RÉSUMÉ</StyledLink>
+
+          <Anchor
+            href="https://gitconnected.com/marianealgayer/resume"
+            text="RÉSUMÉ"
+          />
         </div>
 
         <IoMenu onClick={ () => setMenuIsVisible(true) } />

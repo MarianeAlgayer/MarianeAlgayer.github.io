@@ -34,6 +34,19 @@ export const Container = styled.div`
       align-items: center;
       display: flex;
       flex-direction: column;
+
+      a {
+        margin-bottom: 2rem;
+
+        color: var(--blue);
+        font-size: 2rem;
+        font-weight: 500;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline var(--pink) 4px;
+        }
+      }
     }
   }
 `;
