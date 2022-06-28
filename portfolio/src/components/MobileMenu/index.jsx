@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { IoClose } from 'react-icons/io5';
 
 import { Container, StyledLink } from './styles';
+import Anchor from '../Anchor';
 
 function MobileMenu({ menuIsVisible, setMenuIsVisible }) {
   return (
@@ -26,7 +27,10 @@ function MobileMenu({ menuIsVisible, setMenuIsVisible }) {
             ABOUT
           </StyledLink>
 
-          <StyledLink to="/mariane-algayer-resume.pdf" target="_blank">RÉSUMÉ</StyledLink>
+          <Anchor
+            href="https://gitconnected.com/marianealgayer/resume"
+            text="RÉSUMÉ"
+          />
         </div>
       </nav>
     </Container>
